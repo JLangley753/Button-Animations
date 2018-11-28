@@ -293,6 +293,7 @@ body {
   border-radius: 50%;
   position: absolute;
   transition: 1.5s ease;
+  transition-delay: 0.05s;
 }
 
 .button4:hover::before {

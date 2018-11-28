@@ -119,10 +119,10 @@ body {
   animation: leftsideout 2.5s forwards;
   position: absolute;
   content: "";
-  width: 2px;
+  width: 1px;
   border-radius: 50%;
   background-color: #132238;
-  height: 2px;
+  height: 1px;
   left: 48%;
   bottom: 0;
   overflow: hidden;
@@ -135,10 +135,10 @@ body {
   bottom: 0;
   position: absolute;
   content: "";
-  width: 2px;
+  width: 1px;
   border-radius: 50%;
   background-color: #132238;
-  height: 2px;
+  height: 1px;
   right: 48%;
   overflow: hidden;
   transform:translateZ(0);
@@ -154,7 +154,7 @@ body {
     left: 48%;
   }
   33% {
-    height: 2px;
+    height: 1px;
     left: 0%;
     width: 1px;
   }
@@ -186,7 +186,7 @@ body {
     width: 1px;
   }
   67% {
-    height: 2px;
+    height: 1px;
     left: 0;
     width: 1px;
   }
@@ -204,7 +204,7 @@ body {
     right: 48%;
   }
   33% {
-    height: 2px;
+    height: 1px;
     right: 0%;
     width: 1px;
   }
@@ -236,7 +236,7 @@ body {
    width: 1px;
  }
  67% {
-   height: 2px;
+   height: 1px;
    right: 0;
    width: 1px;
  }
@@ -277,4 +277,54 @@ body {
   100% {
     color: #132238;
   }
+}
+
+.button4 {
+  background-color: transparent;
+}
+
+.button4::before {
+  background-color: #132238;
+  content: "";
+  top: 50%;
+  height: 1.5px;
+  width: 1.5px;
+  left: 29px;
+  border-radius: 50%;
+  position: absolute;
+  transition: 1.5s ease;
+}
+
+.button4:hover::before {
+  background-color: rgba(151, 204, 211, 0.33);
+  height: 35px;
+  width: 35px;
+  left: 30px;
+  top: 3px;
+  transition: 1.5s ease;
+}
+
+.button4::after {
+  background-color: rgba(151, 204, 211, 0);
+  content: "";
+  top: 50%;
+  height: 15px;
+  width: 15px;
+  left: 30px;
+  border-radius: 50%;
+  top: 15px;
+  position: absolute;
+  transition: 1s ease;
+  transition-delay: 0s;
+}
+
+.button4:hover::after {
+  background-color: rgba(151, 204, 211, 0.33);
+  border-radius: none;
+  height: 35px;
+  width: 35px;
+  left: 57px;
+  top: 3px;
+  transition-delay: 1s;
+  width: 35px;
 }

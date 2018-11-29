@@ -23,8 +23,7 @@ body {
   width: 120px;
 }
 
-.button1box {
-}
+.button1box {}
 
 .button1 {
   background-color: transparent;
@@ -61,9 +60,11 @@ body {
   0% {
     box-shadow: 0px 0px 1px 1px #98ccd3;
   }
+
   50% {
     box-shadow: 0px 0px 1.5px 1.5px #364e68;
   }
+
   100% {
     box-shadow: 0px 0px 1px 1px #98ccd3;
   }
@@ -103,17 +104,16 @@ body {
   transition: 1.2s ease;
 }
 
-.button3box {
-}
+.button3box {}
 
 .button3 {
-  animation: btn3fontout 2.5s forwards;
+  animation: btn3fontout 1s forwards;
   background-color: transparent;
   color: #132238;
 }
 
 .button3::before {
-  animation: leftsideout 2.5s forwards;
+  animation: leftsideout 1s forwards;
   position: absolute;
   content: "";
   width: 1px;
@@ -123,12 +123,12 @@ body {
   left: 48%;
   bottom: 0;
   overflow: hidden;
-  transform:translateZ(0);
+  transform: translateZ(0);
   z-index: -1;
 }
 
 .button3::after {
-  animation: rightsideout 2.5s forwards;
+  animation: rightsideout 1s forwards;
   bottom: 0;
   position: absolute;
   content: "";
@@ -138,29 +138,32 @@ body {
   height: 1px;
   right: 48%;
   overflow: hidden;
-  transform:translateZ(0);
+  transform: translateZ(0);
   z-index: -1;
 }
 
 .button3:hover::before {
-  animation: leftsidein 2.5s forwards;
+  animation: leftsidein 2s forwards;
 }
 
 @keyframes leftsidein {
   0% {
     left: 48%;
   }
+
   33% {
     height: 1px;
     left: 0%;
     width: 1px;
   }
+
   67% {
     border-radius: 0;
     height: 100%;
     left: 0%;
     width: 1px;
   }
+
   100% {
     border-radius: 3px 0 0 3px;
     height: 100%;
@@ -176,41 +179,47 @@ body {
     left: 0%;
     width: 50%;
   }
+
   33% {
     border-radius: 0;
     height: 100%;
     left: 0%;
     width: 1px;
   }
+
   67% {
     height: 1px;
     left: 0;
     width: 1px;
   }
+
   100% {
     left: 48%;
   }
 }
 
 .button3:hover::after {
-  animation: rightsidein 2.5s forwards;
+  animation: rightsidein 2s forwards;
 }
 
 @keyframes rightsidein {
   0% {
     right: 48%;
   }
+
   33% {
     height: 1px;
     right: 0%;
     width: 1px;
   }
+
   67% {
     border-radius: 0;
     height: 100%;
     right: 0%;
     width: 1px;
   }
+
   100% {
     border-radius: 0 3px 3px 0;
     height: 100%;
@@ -220,42 +229,48 @@ body {
 }
 
 @keyframes rightsideout {
- 0% {
-   border-radius: 0 3px 3px 0;
-   height: 100%;
-   right: 0%;
-   width: 50%;
- }
- 33% {
-   border-radius: 0;
-   height: 100%;
-   right: 0%;
-   width: 1px;
- }
- 67% {
-   height: 1px;
-   right: 0;
-   width: 1px;
- }
- 100% {
-   right: 48%;
- }
+  0% {
+    border-radius: 0 3px 3px 0;
+    height: 100%;
+    right: 0%;
+    width: 50%;
+  }
+
+  33% {
+    border-radius: 0;
+    height: 100%;
+    right: 0%;
+    width: 1px;
+  }
+
+  67% {
+    height: 1px;
+    right: 0;
+    width: 1px;
+  }
+
+  100% {
+    right: 48%;
+  }
 }
 
 .button3:hover {
-  animation: btn3fontin 2.5s forwards;
+  animation: btn3fontin 2s forwards;
 }
 
 @keyframes btn3fontin {
   0% {
     color: #132238;
   }
+
   33% {
     color: #132238;
   }
+
   67% {
     color: #132238;
   }
+
   100% {
     color: #ebf0f6;
   }
@@ -265,12 +280,15 @@ body {
   0% {
     color: #ebf0f6;
   }
+
   33% {
     color: #132238;
   }
+
   67% {
     color: #132238;
   }
+
   100% {
     color: #132238;
   }
@@ -327,8 +345,7 @@ body {
   width: 35px;
 }
 
-.box2 {
-}
+.box2 {}
 
 .button5 {
   background-color: transparent;
@@ -380,9 +397,11 @@ body {
   0% {
     background-color: transparent;
   }
+
   50% {
     background-color: #98ccd3;
   }
+
   100% {
     background-color: transparent;
   }
@@ -438,7 +457,6 @@ body {
 
 .button6:hover {
   box-shadow: 0px 4px 5px 1px #98ccd3;
-  margin-bottom: 5px;
   transition: 0.5s ease;
   transition-delay: 0.5s;
 }
@@ -477,13 +495,165 @@ body {
   0% {
     top: 31%;
   }
+
   50% {
     top: 25%;
   }
+
   100% {
     top: 31%;
   }
 }
+
+.button7 {
+  background-color: transparent;
+  color: #364e68;
+  overflow: hidden;
+  transition: 1s ease;
+}
+
+.button7:hover {
+  color: #ebf0f6;
+  transition-delay: 0.6s;
+}
+
+.button7::before {
+  animation: btn7out 0.5s forwards;
+  background-color: #364e68;
+  content: "";
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: -120px;
+  width: 120px;
+  z-index: -1;
+}
+
+@keyframes btn7in {
+  0% {
+    left: -120px;
+  }
+
+  50% {
+    left: 0px;
+    height: 1px;
+  }
+
+  100% {
+    left: 0px;
+    height: 40px;
+  }
+}
+
+@keyframes btn7out {
+  0% {
+    left: 0px;
+    height: 40px;
+  }
+
+  50% {
+    left: 0px;
+    height: 1px;
+  }
+
+  100% {
+    left: -120px;
+  }
+}
+
+.button7:hover::before {
+  animation: btn7in 1s forwards;
+}
+
+.button7::after {
+  background-color: #364e68;
+  content: "";
+  height: 0.5px;
+  position: absolute;
+  bottom: 0;
+  right: -120px;
+  width: 120px;
+  transition: 0.3s ease;
+}
+
+.button7:hover::after {
+  right: 0px;
+  transition: 0.3s ease;
+}
+
+.button8box {
+overflow: hidden;
+}
+
+.searchbar {
+  border: 0.5px solid #132238;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px;
+  transition: 0.3s ease;
+  position: relative;
+  width: 120px;
+  z-index: 2;
+}
+
+.searchbar::placeholder {
+  color: #132238;
+}
+
+.searchbar:focus, .searchbar:hover {
+  outline: none;
+  transition: 0.3s ease;
+  width: 320px;
+}
+
+.inputwrap {
+  position: relative;
+  width: auto;
+  z-index: -1;
+}
+
+.inputwrap::before {
+  content: "";
+  position: absolute;
+  background-color: #ebf0f6;
+  width: 340px;
+  height: 34.5px;
+  left: 0%;
+  top: 0;
+  transition: 0.3s ease;
+}
+
+.searchbar:focus ~ .inputwrap::before {
+  transition: 0.3s ease;
+  top: -17.5px;
+}
+
+.searchbar:hover ~ .inputwrap::before {
+  transition: 0.3s ease;
+  top: -17.5px;
+}
+
+.inputwrap::after {
+  content: "";
+  position: absolute;
+  background-color: #ebf0f6;
+  width: 340px;
+  height: 34.5px;
+  left: 0%;
+  top: -70px;
+  transition: 0.3s ease;
+}
+
+.searchbar:focus ~ .inputwrap::after {
+  transition: 0.3s ease;
+  top: -34.5px;
+}
+
+.searchbar:hover ~ .inputwrap::after {
+  transition: 0.3s ease;
+  top: -34.5px;
+}
+
 
 @media (min-width: 768px) {
   .box {

@@ -638,7 +638,7 @@ overflow: hidden;
   position: absolute;
   background-color: #ebf0f6;
   width: 340px;
-  height: 34.5px;
+  height: 35.5px;
   left: 0%;
   top: -70px;
   transition: 0.3s ease;
@@ -646,12 +646,12 @@ overflow: hidden;
 
 .searchbar:focus ~ .inputwrap::after {
   transition: 0.3s ease;
-  top: -34.5px;
+  top: -52.5px;
 }
 
 .searchbar:hover ~ .inputwrap::after {
   transition: 0.3s ease;
-  top: -34.5px;
+  top: -52.5px;
 }
 
 
